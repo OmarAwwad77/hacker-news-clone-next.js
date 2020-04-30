@@ -15,7 +15,6 @@ interface NextContext extends NextPageContext {
 export async function getServerSideProps({ query }: NextContext) {
 	let stories: Story[];
 	let page: number | null = Number(query.page ?? 1);
-	console.log(page, query);
 	try {
 		const res = await axios.get<ApiStory[]>(
 			`http://node-hnapi.herokuapp.com/news?page=${page}`
