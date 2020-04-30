@@ -40,7 +40,7 @@ export default class MyDocument extends Document {
 				<Head>
 					<link
 						rel='shortcut icon'
-						href='../public/favicon.ico'
+						href='../static/favicon.ico'
 						type='image/x-icon'
 					/>
 					<meta name='description' content='Hacker News Clone with Next.js' />
