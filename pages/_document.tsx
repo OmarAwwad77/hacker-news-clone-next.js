@@ -38,6 +38,11 @@ export default class MyDocument extends Document {
 		return (
 			<Html lang='en-US'>
 				<Head>
+					<link
+						rel='shortcut icon'
+						href='../public/favicon.ico'
+						type='image/x-icon'
+					/>
 					<meta name='description' content='Hacker News Clone with Next.js' />
 					<meta
 						name='viewport'
