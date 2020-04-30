@@ -49,7 +49,11 @@ const Home: React.FC<Props> = ({ stories, page }) => {
 	return (
 		<div className='container'>
 			<main>
-				<Layout title={'Hacker News'} page={page}>
+				<Layout
+					withBackButton={page > 1 ? true : false}
+					title={'Hacker News'}
+					page={page}
+				>
 					{stories.length === 0 ? (
 						<div style={{ textAlign: 'center', marginTop: '5rem' }}>
 							Something Went Wrong While Fetching{' '}
